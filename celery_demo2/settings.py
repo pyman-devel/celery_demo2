@@ -125,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CELERY_BROKER_URL = 'amqp://guest:rjsgml1324__@localhost:5672//'
+CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672//'
 CELERY_TASK_ROUTES = {
  'celery_demo2.mytask1.*': {'queue': 'mytask1'},
  'celery_demo2.mytask2.*': {'queue': 'mytask2'},
